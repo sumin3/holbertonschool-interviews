@@ -1,3 +1,4 @@
+
 #include "search_algos.h"
 void print_array(int *array, size_t size);
 /**
@@ -15,7 +16,7 @@ int binary_search(int *array, size_t size, int value)
 	if (!array)
 		return (-1);
 	print_array(array,  size);
-	else if (array[mid] == value)
+	if (array[mid] == value)
 		return (mid);
 	else if (array[mid] > value && size >= 2)
 		return (binary_search(array, size - mid, value));
