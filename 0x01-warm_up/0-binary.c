@@ -37,15 +37,12 @@ void print_array(int *array, size_t size)
 {
 	size_t i;
 
-	if (array  && size != 0)
+	printf("Searching in array: ");
+	for (i = 0; i < size; i++)
 	{
-		printf("Searching in array: ");
-		for (i = 0; i < size; i++)
-		{
-			printf("%d", array[i]);
-			if (i != size - 1)
-				printf(", ");
-		}
-		printf("\n");
+		printf("%d", array[i]);
+		if (i != size - 1)
+			printf(", ");
 	}
+	printf("\n");
 }
